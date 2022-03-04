@@ -37,7 +37,6 @@ export class MainComponent implements OnInit, OnDestroy {
         .get100Pictures(i)
         .subscribe((pictures) => {
           this.mapPictures(pictures);
-          console.log(pictures);
         });
     }
   }

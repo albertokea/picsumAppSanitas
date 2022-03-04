@@ -16,7 +16,6 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {}
 
   public searchPicture() {
-    console.log('change');
     this.search.emit(this.searchInputText);
   }
 }
