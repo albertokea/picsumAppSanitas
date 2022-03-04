@@ -1,0 +1,44 @@
+:host ::ng-deep {
+  .picture-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 6rem;
+    .picture {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0;
+
+      img,
+      h4 {
+        margin: 0.5rem auto;
+      }
+      img {
+        max-width: 15rem;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+      }
+      h4 {
+        font-family: var(--font-family);
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .picture-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .picture-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .picture-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

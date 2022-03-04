@@ -1,0 +1,10 @@
+<div class="picture-container">
+  <div class="picture" *ngFor="let picture of pictures">
+    <img
+      [src]="picture.photo"
+      [alt]="'picture from ' + picture.text"
+      loading="lazy"
+    />
+    <h4>Foto por {{ picture.text }}</h4>
+  </div>
+</div>

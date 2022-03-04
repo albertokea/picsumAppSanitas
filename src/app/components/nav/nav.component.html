@@ -1,0 +1,16 @@
+<nav class="nav-container">
+  <div class="fixed">
+    <div class="wrapper nav-content-container">
+      <h3>Picsum App Sanitas</h3>
+      <div>
+        <input
+          type="search"
+          class="search-input"
+          [(ngModel)]="searchInputText"
+          (input)="searchPicture()"
+          placeholder="Buscar foto..."
+        />
+      </div>
+    </div>
+  </div>
+</nav>

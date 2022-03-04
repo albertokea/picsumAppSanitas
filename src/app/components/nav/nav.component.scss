@@ -1,0 +1,26 @@
+:host ::ng-deep {
+  .nav-container {
+    height: 4rem;
+    width: 100%;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .nav-content-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      h3 {
+        font-family: var(--font-family);
+        margin-left: 0.5rem;
+      }
+      .search-input {
+        width: 15rem;
+        height: 2rem;
+        border-radius: 8px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
